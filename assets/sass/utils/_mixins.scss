@@ -1,0 +1,21 @@
+@mixin banner-icons ($codes) {
+    &::before {
+        content: $codes !important;
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        font-size: 2rem;
+        color: $secondary-orange-color;
+        display: block;
+        cursor: pointer;
+    }
+    &:hover::before {
+        transition: .5s ease-in;
+        transform: scale(1.05);
+        overflow: hidden;
+    }
+}

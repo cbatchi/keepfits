@@ -1,0 +1,74 @@
+.banner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: $primary-white-color;
+    padding: 8rem 4rem;
+    width: 100%;
+
+    &-title {
+        width: 60%;
+        height: auto;
+        color: inherit;
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: justify;
+        letter-spacing: .25rem;
+
+        strong {
+            display: block;
+            hyphens: auto;
+        }
+    }
+
+    &-logo {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-play {
+            display: block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background-color: transparent;
+            border: 1px solid rgba($primary-white-color, .6);
+            border-radius: 50%;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                background-color: $primary-orange-color;
+                border-radius: 50%;
+            }
+
+            &::after {
+                content: "\f144";
+                font-family: "Font Awesome 5 Free";
+                font-weight: bold;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                background-color: transparent;
+                font-size: 1.5rem;
+                cursor: pointer;
+
+            }
+
+            &:hover {
+                transition: .5s ease-in;
+                transform: translateX(-50px) scale(1.25);
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,65 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba($primary-white-color, .25);
+    padding: 1.2rem;
+    text-transform: uppercase;
+
+    &-logo {
+        font-family: $secondary-font-family;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: .15rem;
+        text-transform: capitalize;
+    }
+
+    &-nav,
+    &-join {
+        font-size: .9rem;
+        font-weight: 600;
+        transition: .5s ease;
+
+    }
+
+    &-nav {
+        display: flex;
+
+        > * {
+            margin: 0 2rem;
+            position: relative;
+            transition: .5s ease;
+
+            &:hover,
+            &:hover:first-of-type {
+                color: $primary-orange-color;
+            }
+
+            &:hover::after {
+                content: '';
+                position: absolute;
+                bottom: -12px;
+                left: 50%;
+                width: 7px;
+                height: 7px;
+
+                color: $primary-orange-color;
+                background-color: $primary-orange-color;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &-join {
+        display: block;
+        padding: 10px 30px;
+        border-radius: 20px;
+        background-color: $primary-orange-color;
+
+        &:hover {
+            background-color: transparent;
+            background-color: rgba($primary-orange-color, .7);
+        }
+    }
+}

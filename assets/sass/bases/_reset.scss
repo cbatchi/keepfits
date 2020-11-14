@@ -1,0 +1,43 @@
+/* Default style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection {
+    color: $primary-orange-color;
+    transition: .5s ease;
+}
+
+body {
+    font-size: $default-font-size;
+    font-family: $default-font-family;
+    color: $primary-black-color;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary-black-color;
+    hyphens: auto;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}

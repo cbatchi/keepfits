@@ -1,0 +1,60 @@
+.content-picture {
+    width: 40%;
+    height: auto;
+}
+
+.picture-man {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.content-descriptions {
+    width: 60%;
+    padding-left: 5rem;
+
+    &-title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        
+        span { display: block; }
+        span:last-of-type { color: $primary-orange-color; }
+    }
+
+    &-paragraph {
+        hyphens: auto;
+        text-align: justify;
+        margin-bottom: 2rem;
+        color: $secondary-black-color;
+    }
+
+    &-find {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        position: relative;
+        margin-left: 20px;
+        z-index: 1;
+
+        &::before {
+            content: '-';
+            position: absolute;
+            margin-right: 20px;
+            top: 10px;
+            left: -8px ;
+            transform: translate(-50%,-50%);
+            font-size: 1rem;
+            padding: 10px 20px ;
+            border-radius: 50%;
+            background-color: $primary-orange-color;
+            z-index: -1;
+
+        }
+    }
+}

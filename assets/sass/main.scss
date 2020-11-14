@@ -1,0 +1,31 @@
+// Import all bases partials
+    @import
+        './bases/variables',
+        './bases/typography',
+        './bases/reset';
+
+
+// Import all utils partials
+    @import
+        './utils/mixins',
+        './utils/utils';
+
+
+// Import all layout partials
+    @import
+        './layout/container',
+        './layout/header',
+        './layout/sections',
+        './layout/footer';
+
+
+
+// Import all components partials
+    @import
+        './components/navbar',
+        './components/banner',
+        './components/about';
+
+
+
+
